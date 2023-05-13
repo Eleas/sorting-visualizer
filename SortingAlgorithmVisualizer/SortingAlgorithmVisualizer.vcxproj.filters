@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SortingAlgorithmVisualizer.cpp" />
+    <ClCompile Include="BadBubbleSort.cpp" />
+    <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="CocktailSort.cpp" />
+    <ClCompile Include="Sorter.cpp" />
+    <ClCompile Include="CocktailSort.h">
+      <Filter>Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="BogoSort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BadBubbleSort.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BogoSort.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorter.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingUtilities.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{61609cb3-0ace-4adb-a04e-1aaa8354c0b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
