@@ -1,6 +1,7 @@
 #pragma once
 #include <algorithm>
 #include <iostream>
+#include <numeric>
 #include <random>
 #include <ranges>
 #include <sstream>
@@ -12,6 +13,7 @@
 #include "CocktailSort.h"
 
 using std::cout;
+using std::iota;
 using std::make_pair;
 using std::mt19937;
 using std::ostringstream;
@@ -24,13 +26,13 @@ using std::vector;
 
 
 
-
 enum class Sort {
     BubbleSort,
     BadBubbleSort,
     BogoSort,
     CocktailSort
 };
+
 
 Sorter* SortingMethodFactory(Sort method, vector<int> vec) {
     switch (method) {
@@ -43,7 +45,6 @@ Sorter* SortingMethodFactory(Sort method, vector<int> vec) {
 }
 
 
-// For comparison purposes.
 vector<int> GenerateRandomIntegers(const size_t count) {
     random_device rd;                          // Random device used as a seed for the random number engine
     mt19937 rng(rd());                         // Mersenne Twister random number engine
@@ -54,6 +55,17 @@ vector<int> GenerateRandomIntegers(const size_t count) {
 
     return numbers;
 }
+
+vector<int> GenerateList(const size_t count) {
+    random_device rd;                          // Random device used as a seed for the random number engine
+    mt19937 rng(rd());                         // Mersenne Twister random number engine
+
+    vector<int> numbers(count);
+    iota(numbers.begin(), numbers.end(), 0);
+    shuffle(numbers.begin(), numbers.end(), rng);
+    return numbers;
+}
+
 
 
 // Just to get a sense of what's happening during the sorting.

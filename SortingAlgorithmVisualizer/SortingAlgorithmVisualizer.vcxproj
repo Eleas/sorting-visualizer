@@ -137,6 +137,7 @@
     <ClCompile Include="Sorter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\source\repos\MapCreator\MapCreator\olcPixelGameEngine.h" />
     <ClInclude Include="BadBubbleSort.h" />
     <ClInclude Include="BogoSort.h" />
     <ClInclude Include="BubbleSort.h" />

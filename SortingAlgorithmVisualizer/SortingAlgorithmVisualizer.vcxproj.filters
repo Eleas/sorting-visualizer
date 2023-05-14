@@ -27,6 +27,9 @@
     <ClInclude Include="SortingUtilities.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\source\repos\MapCreator\MapCreator\olcPixelGameEngine.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
